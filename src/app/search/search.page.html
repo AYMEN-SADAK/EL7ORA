@@ -1,0 +1,69 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-title>
+      <ion-icon name="search" padding-end></ion-icon>Search</ion-title>
+
+      <ion-avatar *ngIf="Lang!=='ar'" (click)="change('ar')" slot="end" style="width: 17%;height: 17%"><ion-img src="../../assets/mar.png" ></ion-img></ion-avatar>
+      <ion-avatar *ngIf="Lang!=='ar'" (click)="change('ar')" slot="end" style="width: 11%;height: 11%" padding-end><ion-img src="../../assets/fr.png" ></ion-img></ion-avatar>
+
+     <ion-avatar *ngIf="Lang==='ar'" (click)="change('fr')" slot="end" style="width: 11%;height: 11%"><ion-img src="../../assets/mar.png" ></ion-img></ion-avatar>
+      <ion-avatar *ngIf="Lang==='ar'" (click)="change('fr')" slot="end" style="width: 11%;height: 11%" margin-end><ion-img src="../../assets/fr.png" ></ion-img></ion-avatar>
+
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+    <ion-searchbar showCancelButton="focus"></ion-searchbar>
+
+    <ion-grid>
+        <ion-row>
+            <ion-col>
+                <ion-title padding-horizontal style="float: top">Nos Domaines de Services</ion-title></ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col sizeMd="6" sizeXl="8" sizeLg="6" offsetLg="3" offsetXl="2">
+                <ion-grid>
+                    <ion-row>
+                        <ion-col sizeMd="6" sizeLg="6">
+                            <ion-card routerLink="/house">
+                                <ion-img src="../../assets/house.png" ></ion-img>
+                                <ion-card-content >
+                                    Ménage et aide maison
+                                </ion-card-content>
+                            </ion-card>
+                        </ion-col>
+
+                        <ion-col sizeMd="6" sizeLg="6">
+                            <ion-card routerLink="/handcraft">
+                                <ion-img src="../../assets/handcraft.jpg"  ></ion-img>
+                            <ion-card-content>
+                                Artisanat coutures et retouches...
+                            </ion-card-content>
+
+                            </ion-card>
+
+                        </ion-col>
+                    </ion-row>
+                    <ion-row>
+                        <ion-col sizeMd="6" sizeLg="6">
+                            <ion-card routerLink="/cooking">
+                                <ion-img src="../../assets/cooking.jpg" ></ion-img>
+                                <ion-card-content>
+                                    Cuisine Marocaine Beldi
+                                </ion-card-content>
+                            </ion-card>
+                        </ion-col>
+
+                        <ion-col sizeMd="6" sizeLg="6">
+                            <ion-card routerLink="/oldchild">
+                                <ion-img src="../../assets/care.jpg" ></ion-img>
+                                <ion-card-content>
+                                    Prise en charge des enfants et personnes âgées
+                                </ion-card-content>
+                            </ion-card>
+                        </ion-col>
+                    </ion-row>
+                </ion-grid></ion-col></ion-row>
+    </ion-grid>
+</ion-content>

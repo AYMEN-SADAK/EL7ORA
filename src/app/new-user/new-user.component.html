@@ -1,0 +1,190 @@
+<form (ngSubmit)="onSubmit(f)" #f="ngForm" padding *ngIf="Lang==='ar'">
+  <ion-grid>
+    <ion-row>
+      <ion-col padding-horizontal padding-bottom>
+        <bdi dir="rtl">
+          <ion-list lines="full" class="ion-no-margin ion-no-padding">
+            <ion-item>
+              <ion-label position="stacked"><ion-icon name="person" padding-horizontal></ion-icon>سميتي  <ion-text color="danger">*</ion-text></ion-label>
+              <ion-input required type="text" oninput="handleFirstNameValue(event)" id="name" name="name" ngModel></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label position="stacked"><ion-icon name="people" padding-horizontal></ion-icon>كنيتي  <ion-text color="danger">*</ion-text></ion-label>
+              <ion-input required type="text" oninput="handleLastNameValue(event)" name="sname" id="sname" ngModel></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-label position="stacked"><ion-icon name="card" padding-horizontal></ion-icon>رقم البطاقة الوطنية ديالي  <ion-text color="danger">*</ion-text></ion-label>
+              <ion-input required type="text" oninput="handleLastNameValue(event)" id="cin" name="cin" ngModel></ion-input>
+            </ion-item>
+              <ion-item>
+                  <ion-label position="stacked"><ion-icon name="call" padding-horizontal></ion-icon>تيليفوني  <ion-text color="danger">*</ion-text></ion-label>
+                  <ion-input required type="text" oninput="handleLastNameValue(event)" id="tel" ngModel name="tel"></ion-input>
+              </ion-item>
+            <ion-item>
+              <ion-label position="stacked"><ion-icon name="compass" padding-horizontal></ion-icon>المدينة ديالي  </ion-label>
+                <ion-select  id="city" ngModel name="city">
+                    <ion-select-option value="Agadir" >
+                        Agadir				</ion-select-option>
+                    <ion-select-option value="Al Hoceïma" >
+                        Al Hoceïma		</ion-select-option>
+                    <ion-select-option value="Assilah" >
+                        Assilah				</ion-select-option>
+                    <ion-select-option value="Casablanca" >
+                        Casablanca				</ion-select-option>
+                    <ion-select-option value="Chefchaouen" >
+                        Chefchaouen				</ion-select-option>
+                    <ion-select-option value="Dakhla" >
+                        Dakhla				</ion-select-option>
+                    <ion-select-option value="El Jadida" >
+                        El Jadida&amp;Oualidia				</ion-select-option>
+                    <ion-select-option value="Erfoud" >
+                        Erfoud &amp; Rissani				</ion-select-option>
+                    <ion-select-option value="Errachidia" >
+                        Errachidia				</ion-select-option>
+                    <ion-select-option value="Essaouira" >
+                        Essaouira				</ion-select-option>
+                    <ion-select-option value="Fes" >
+                        Fes				</ion-select-option>
+                    <ion-select-option value="Ifrane" >
+                        Ifrane				</ion-select-option>
+                    <ion-select-option value="Laâyoune" >
+                        Laâyoune				</ion-select-option>
+                    <ion-select-option value="Marrakech" >
+                        Marrakech				</ion-select-option>
+                    <ion-select-option value="Meknes" >
+                        Meknes				</ion-select-option>
+                    <ion-select-option value="Merzouga" >
+                        Merzouga				</ion-select-option>
+                    <ion-select-option value="Mohammédia" >
+                        Mohammédia				</ion-select-option>
+                    <ion-select-option value="Nador" >
+                        Nador				</ion-select-option>
+                    <ion-select-option value="848" >
+                        Ouarzazate				</ion-select-option>
+                    <ion-select-option value="Oujda" >
+                        Oujda&amp;Saïdia				</ion-select-option>
+                    <ion-select-option value="Rabat" >
+                        Rabat				</ion-select-option>
+                    <ion-select-option value="Salé" >
+                        Salé				</ion-select-option>
+                    <ion-select-option value="Tanger" >
+                        Tanger				</ion-select-option>
+                    <ion-select-option value="Temara" >
+                        Temara				</ion-select-option>
+                    <ion-select-option value="Tetouan" >
+                        Tetouan				</ion-select-option>
+                    <ion-select-option value="Zagora" >
+                        Zagora				</ion-select-option>
+
+                </ion-select>
+
+            </ion-item>
+
+
+
+          </ion-list>
+
+          <ion-button padding expand="block" type="submit" class="ion-no-margin" color="success">على بركة الله </ion-button>
+
+        </bdi></ion-col></ion-row>
+  </ion-grid>
+
+</form>
+
+
+<form (ngSubmit)="onSubmit(f)" #f="ngForm" padding *ngIf="Lang!=='ar'">
+    <ion-grid>
+        <ion-row>
+            <ion-col padding-horizontal padding-bottom>
+                    <ion-list lines="full" class="ion-no-margin ion-no-padding">
+                        <ion-item>
+                            <ion-label position="stacked"><ion-icon name="people" padding-horizontal></ion-icon>  Nom <ion-text color="danger">*</ion-text></ion-label>
+                            <ion-input required type="text" oninput="handleFirstNameValue(event)" id="name" name="name" ngModel></ion-input>
+                        </ion-item>
+
+                        <ion-item>
+                            <ion-label position="stacked"><ion-icon name="person" padding-horizontal></ion-icon> Prénom <ion-text color="danger">*</ion-text></ion-label>
+                            <ion-input required type="text" oninput="handleLastNameValue(event)" name="sname" id="sname" ngModel></ion-input>
+                        </ion-item>
+
+                        <ion-item>
+                            <ion-label position="stacked"><ion-icon name="card" padding-horizontal></ion-icon>Numéro CIN  <ion-text color="danger">*</ion-text></ion-label>
+                            <ion-input required type="text" oninput="handleLastNameValue(event)" id="cin" name="cin" ngModel></ion-input>
+                        </ion-item>
+
+                         <ion-item>
+                            <ion-label position="stacked"><ion-icon name="call" padding-horizontal></ion-icon>Téléphone  <ion-text color="danger">*</ion-text></ion-label>
+                            <ion-input required type="text" oninput="handleLastNameValue(event)" id="tel" ngModel name="tel"></ion-input>
+                        </ion-item>
+
+                        <ion-item>
+                            <ion-label position="stacked"><ion-icon name="compass" padding-horizontal></ion-icon>  Ville </ion-label>
+                            <ion-select id="city" ngModel name="city">
+
+                                <ion-select-option value="Agadir" >
+                                    Agadir				</ion-select-option>
+                                <ion-select-option value="Al Hoceïma" >
+                                    Al Hoceïma				</ion-select-option>
+                                <ion-select-option value="Assilah" >
+                                    Assilah				</ion-select-option>
+                                <ion-select-option value="Casablanca" >
+                                    Casablanca				</ion-select-option>
+                                <ion-select-option value="Chefchaouen" >
+                                    Chefchaouen				</ion-select-option>
+                                <ion-select-option value="Dakhla" >
+                                    Dakhla				</ion-select-option>
+                                <ion-select-option value="El Jadida" >
+                                    El Jadida&amp;Oualidia				</ion-select-option>
+                                <ion-select-option value="Erfoud" >
+                                    Erfoud &amp; Rissani				</ion-select-option>
+                                <ion-select-option value="Errachidia" >
+                                    Errachidia				</ion-select-option>
+                                <ion-select-option value="Essaouira" >
+                                    Essaouira				</ion-select-option>
+                                <ion-select-option value="Fes" >
+                                    Fes				</ion-select-option>
+                                <ion-select-option value="Ifrane" >
+                                    Ifrane				</ion-select-option>
+                                <ion-select-option value="Laâyoune" >
+                                    Laâyoune				</ion-select-option>
+                                <ion-select-option value="Marrakech" >
+                                    Marrakech				</ion-select-option>
+                                <ion-select-option value="Meknes" >
+                                    Meknes				</ion-select-option>
+                                <ion-select-option value="Merzouga" >
+                                    Merzouga				</ion-select-option>
+                                <ion-select-option value="Mohammédia" >
+                                    Mohammédia				</ion-select-option>
+                                <ion-select-option value="Nador" >
+                                    Nador				</ion-select-option>
+                                <ion-select-option value="848" >
+                                    Ouarzazate				</ion-select-option>
+                                <ion-select-option value="Oujda" >
+                                    Oujda&amp;Saïdia				</ion-select-option>
+                                <ion-select-option value="Rabat" >
+                                    Rabat				</ion-select-option>
+                                <ion-select-option value="Salé" >
+                                    Salé				</ion-select-option>
+                                <ion-select-option value="Tanger" >
+                                    Tanger				</ion-select-option>
+                                <ion-select-option value="Temara" >
+                                    Temara				</ion-select-option>
+                                <ion-select-option value="Tetouan" >
+                                    Tetouan				</ion-select-option>
+                                <ion-select-option value="Zagora" >
+                                    Zagora				</ion-select-option>
+
+                            </ion-select>
+                        </ion-item>
+
+
+                    </ion-list>
+
+                    <ion-button padding expand="block" type="submit" class="ion-no-margin" color="success" [disabled]="!f.valid" > Bienvenue </ion-button>
+
+               </ion-col></ion-row>
+    </ion-grid>
+
+</form>
+

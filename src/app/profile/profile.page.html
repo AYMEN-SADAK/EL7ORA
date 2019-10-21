@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-title>
+      <ion-icon name="person" padding-end></ion-icon> Profile
+    </ion-title>
+    <ion-avatar *ngIf="Lang!=='ar'" (click)="change('ar')" slot="end" style="width: 17%;height: 17%"><ion-img src="../../assets/mar.png" ></ion-img></ion-avatar>
+    <ion-avatar *ngIf="Lang!=='ar'" (click)="change('ar')" slot="end" style="width: 11%;height: 11%" padding-end><ion-img src="../../assets/fr.png" ></ion-img></ion-avatar>
+
+    <ion-avatar *ngIf="Lang==='ar'" (click)="change('fr')" slot="end" style="width: 11%;height: 11%"><ion-img src="../../assets/mar.png" ></ion-img></ion-avatar>
+    <ion-avatar *ngIf="Lang==='ar'" (click)="change('fr')" slot="end" style="width: 11%;height: 11%" margin-end><ion-img src="../../assets/fr.png" ></ion-img></ion-avatar>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<app-new-user *ngIf="true" ></app-new-user>
+    <app-user-space *ngIf="false"></app-user-space>
+</ion-content>
